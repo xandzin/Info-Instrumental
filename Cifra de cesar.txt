@@ -1,0 +1,7 @@
+#Criptografar
+read -p "Digite o seu texto: " entrada; entrada="${entrada,,}"
+echo "$entrada" | tr '[a-z]' '[x-za-w]'
+
+#Descriptografar
+read -p "Digite o seu texto para descriptografar: " entrada
+echo "$entrada" | tr '[x-za-w]' '[a-z]
